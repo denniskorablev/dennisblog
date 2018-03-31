@@ -1,0 +1,38 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Blog of Dennis Lyubyvy"
+theme = "hugo-theme-bootstrap4-blog"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About me"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/denniskorablev"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/dennis_stat"
+
+[params]
+    description = "Life is a deep dive"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "bootstrap4"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
